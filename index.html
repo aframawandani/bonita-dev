@@ -59,8 +59,8 @@
       };
     </script>
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://aframawandani.github.io/bonita-dev/assets/js/jquery-2.2.4.min.js"></script>
+    <script src="https://aframawandani.github.io/bonita-dev/assets/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://aframawandani.github.io/bonita-dev/assets/js/slick.min.js"></script>
     <script>
       $(document).ready(() => {
@@ -97,78 +97,60 @@
   </head>
 
   <body class="text-neutral-800">
-    <nav
-      class="sticky z-[10000] top-0 h-[73px] border-b border-neutral-200 bg-white"
-    >
-      <div
-        class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 h-full !py-0"
-      >
+    <!-- Navbar -->
+    <nav class="sticky z-[10000] top-0 h-[73px] border-b border-neutral-200 bg-white">
+      <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 h-full !py-0">
         <div class="relative flex items-center gap-2 h-full">
           <button class="shrink-0 block lg:hidden p-2">
-            <img class="w-8 h-8" src="https://aframawandani.github.io/bonita-dev/assets/images/menu.svg" alt="" /><img
-              class="w-8 h-8 hidden"
-              src="https://aframawandani.github.io/bonita-dev/assets/images/x.svg"
-              alt=""
-            /></button
-          ><a class="shrink-0 mx-auto lg:mx-0" href="index.html"
-            ><img
+            <img class="w-8 h-8" src="https://aframawandani.github.io/bonita-dev/assets/images/menu.svg" />
+          </button>
+          <a class="shrink-0 mx-auto lg:mx-0" href="index.html">
+            <img
               class="w-[121px] h-10 object-cover"
               src="https://aframawandani.github.io/bonita-dev/assets/images/screenshot-20240402-at-1315-1@2x.png"
-              alt=""
-          /></a>
-          <div
-            class="hidden lg:block fixed lg:static top-[72px] left-0 right-0 mr-auto bg-white"
-          >
-            <ul
-              class="flex flex-col lg:flex-row items-stetch justify-start shrink-0 text-neutral-800"
-            >
+            />
+          </a>
+          <div class="hidden lg:block fixed lg:static top-[72px] left-0 right-0 mr-auto bg-white">
+            <ul class="flex flex-col lg:flex-row items-stetch justify-start shrink-0 text-neutral-800">
               <li>
                 <a
                   class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
                   href="index.html"
-                  >Beranda</a
-                >
+                >Beranda</a>
               </li>
               <li>
                 <a
                   class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
                   href="about.html"
-                  >Tentang Kami</a
-                >
+                >Tentang Kami</a>
               </li>
               <li>
                 <a
                   class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
                   href="product.html"
-                  >Sprei</a
-                >
+                >Sprei</a>
               </li>
               <li>
                 <a
                   class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
                   href="product.html"
-                  >Bedcover</a
-                >
+                >Bedcover</a>
               </li>
               <li>
                 <a
                   class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
                   href="product.html"
-                  >Viona</a
-                >
+                >Viona</a>
               </li>
               <li>
                 <a
                   class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
                   href="partners.html"
-                  >Partner Kami</a
-                >
+                >Partner Kami</a>
               </li>
             </ul>
           </div>
-          <div
-            class="absolute xl:relative hidden xl:!block left-0 top-auto w-full xl:w-auto bg-white"
-          >
+          <div class="absolute xl:relative hidden xl:!block left-0 top-auto w-full xl:w-auto bg-white">
             <img
               alt=""
               loading="lazy"
@@ -179,9 +161,11 @@
               class="hidden xl:block absolute top-2 left-6 w-8 h-8"
               style="color: transparent"
               src="https://aframawandani.github.io/bonita-dev/assets/images/search.svg"
-            /><button class="block xl:hidden absolute top-2 left-6">
-              <img class="w-8 h-8" src="https://aframawandani.github.io/bonita-dev/assets/images/arrow-left.svg" /></button
-            ><input
+            />
+            <button class="block xl:hidden absolute top-2 left-6">
+              <img class="w-8 h-8" src="https://aframawandani.github.io/bonita-dev/assets/images/arrow-left.svg" />
+            </button>
+            <input
               class="rounded-2xl bg-neutral-50 box-border w-full xl:w-[297px] h-12 flex flex-row items-center justify-start py-4 pl-16 pr-6 gap-[8px] border-[1px] border-solid border-neutral-200"
               placeholder="Search"
             />
@@ -192,18 +176,15 @@
         </div>
       </div>
     </nav>
+
+    <!-- Banner -->
     <div class="flex flex-col">
-      <div id="bannerSlider">
+      <div class="slick-single" id="bannerSlider">
+        <!-- Slide 1 -->
         <div class="relative w-screen">
-          <div
-            class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 justify-center gap-5 h-full !py-8 min-h-[calc(100vw*672/1440)]"
-          >
-            <div
-              class="flex flex-col items-start justify-center gap-8 basis-full"
-            >
-              <div
-                class="flex flex-col justify-start gap-4 w-[640px] max-w-full text-white"
-              >
+          <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 justify-center gap-5 h-full !py-8 min-h-[calc(100vw*672/1440)]">
+            <div class="flex flex-col items-start justify-center gap-8 basis-full">
+              <div class="flex flex-col justify-start gap-4 w-[640px] max-w-full text-white">
                 <h1 class="typeface-heading-2 md:typeface-heading-1">
                   Kenyamanan Tidur Dimulai Dari Sini
                 </h1>
@@ -218,26 +199,20 @@
               <a
                 class="rounded-2xl bg-primary-300 h-14 flex flex-row items-center justify-center py-4 px-12 typeface-subtile-2 text-white"
                 href=""
-                >Lihat semua koleksi</a
-              >
+              >Lihat semua koleksi</a>
             </div>
           </div>
           <img
             class="absolute z-[-1] top-0 left-0 w-full h-full object-cover"
-            alt=""
             src="https://aframawandani.github.io/bonita-dev/assets/images/dsc02914-1@2x.png"
           />
         </div>
+
+        <!-- Slide 2 -->
         <div class="relative w-screen">
-          <div
-            class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 justify-center gap-5 h-full !py-8 min-h-[calc(100vw*672/1440)]"
-          >
-            <div
-              class="flex flex-col items-start justify-center gap-8 basis-full"
-            >
-              <div
-                class="flex flex-col justify-start gap-4 w-[640px] max-w-full text-white"
-              >
+          <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 justify-center gap-5 h-full !py-8 min-h-[calc(100vw*672/1440)]">
+            <div class="flex flex-col items-start justify-center gap-8 basis-full">
+              <div class="flex flex-col justify-start gap-4 w-[640px] max-w-full text-white">
                 <h1 class="typeface-heading-2 md:typeface-heading-1">
                   Kenyamanan Tidur Dimulai Dari Sini
                 </h1>
@@ -252,26 +227,20 @@
               <a
                 class="rounded-2xl bg-primary-300 h-14 flex flex-row items-center justify-center py-4 px-12 typeface-subtile-2 text-white"
                 href=""
-                >Lihat semua koleksi</a
-              >
+              >Lihat semua koleksi</a>
             </div>
           </div>
           <img
             class="absolute z-[-1] top-0 left-0 w-full h-full object-cover"
-            alt=""
             src="https://aframawandani.github.io/bonita-dev/assets/images/dsc02914-1@2x.png"
           />
         </div>
+
+        <!-- Slide 3 -->
         <div class="relative w-screen">
-          <div
-            class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 justify-center gap-5 h-full !py-8 min-h-[calc(100vw*672/1440)]"
-          >
-            <div
-              class="flex flex-col items-start justify-center gap-8 basis-full"
-            >
-              <div
-                class="flex flex-col justify-start gap-4 w-[640px] max-w-full text-white"
-              >
+          <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 justify-center gap-5 h-full !py-8 min-h-[calc(100vw*672/1440)]">
+            <div class="flex flex-col items-start justify-center gap-8 basis-full">
+              <div class="flex flex-col justify-start gap-4 w-[640px] max-w-full text-white">
                 <h1 class="typeface-heading-2 md:typeface-heading-1">
                   Kenyamanan Tidur Dimulai Dari Sini
                 </h1>
@@ -286,21 +255,19 @@
               <a
                 class="rounded-2xl bg-primary-300 h-14 flex flex-row items-center justify-center py-4 px-12 typeface-subtile-2 text-white"
                 href=""
-                >Lihat semua koleksi</a
-              >
+              >Lihat semua koleksi</a>
             </div>
           </div>
           <img
             class="absolute z-[-1] top-0 left-0 w-full h-full object-cover"
-            alt=""
             src="https://aframawandani.github.io/bonita-dev/assets/images/dsc02914-1@2x.png"
           />
         </div>
       </div>
     </div>
-    <div
-      class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 !flex-row justify-center gap-x-[120px] gap-y-16 flex-wrap !py-14"
-    >
+
+    <!-- Section 1 -->
+    <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 !flex-row justify-center gap-x-[120px] gap-y-16 flex-wrap !py-14">
       <div class="flex items-center justify-center gap-3">
         <img
           class="w-12 relative h-12 overflow-hidden shrink-0"
@@ -326,51 +293,60 @@
         <div class="typeface-heading-5 text-nowrap">Teknologi Printing</div>
       </div>
     </div>
-    <div
-      class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 items-center gap-14 py-24"
-    >
+
+    <!-- Section 2 -->
+    <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 items-center gap-14 py-24">
       <div class="typeface-heading-2">Pilih kebutuhanmu</div>
       <div class="flex justify-center gap-8 flex-wrap">
         <a
           class="w-[299px] rounded-2xl bg-neutral-25 flex flex-col items-center py-10 px-0 gap-6 outline outline-1 outline-offset-[-1px] outline-primary-50 hover:outline-2 hover:outline-offset-[-2px]"
           href=""
-          ><img
+        >
+          <img
             class="w-16 relative h-16 overflow-hidden shrink-0"
             alt=""
             src="https://aframawandani.github.io/bonita-dev/assets/images/boy.svg"
           />
-          <div class="typeface-heading-5">Semua Kategori</div> </a
-        ><a
+          <div class="typeface-heading-5">Semua Kategori</div>
+        </a>
+        <a
           class="w-[299px] rounded-2xl bg-neutral-25 flex flex-col items-center py-10 px-0 gap-6 outline outline-1 outline-offset-[-1px] outline-primary-50 hover:outline-2 hover:outline-offset-[-2px]"
           href=""
-          ><img
+        >
+          <img
             class="w-16 relative h-16 overflow-hidden shrink-0"
             alt=""
             src="https://aframawandani.github.io/bonita-dev/assets/images/bedsheets.svg"
           />
-          <div class="typeface-heading-5">Sprei</div> </a
-        ><a
+          <div class="typeface-heading-5">Sprei</div>
+        </a>
+        <a
           class="w-[299px] rounded-2xl bg-neutral-25 flex flex-col items-center py-10 px-0 gap-6 outline outline-1 outline-offset-[-1px] outline-primary-50 hover:outline-2 hover:outline-offset-[-2px]"
           href=""
-          ><img
+        >
+          <img
             class="w-16 relative h-16 overflow-hidden shrink-0"
             alt=""
             src="https://aframawandani.github.io/bonita-dev/assets/images/bed.svg"
           />
-          <div class="typeface-heading-5">Bed Cover</div> </a
-        ><a
+          <div class="typeface-heading-5">Bed Cover</div>
+        </a>
+        <a
           class="w-[299px] rounded-2xl bg-neutral-25 flex flex-col items-center py-10 px-0 gap-6 outline outline-1 outline-offset-[-1px] outline-primary-50 hover:outline-2 hover:outline-offset-[-2px]"
           href=""
-          ><img
+        >
+          <img
             class="w-16 relative h-16 overflow-hidden shrink-0"
             alt=""
             src="https://aframawandani.github.io/bonita-dev/assets/images/pillows.svg"
           />
-          <div class="typeface-heading-5">Perlengkapan Tidur</div> </a
-        ><a
+          <div class="typeface-heading-5">Perlengkapan Tidur</div>
+          </a>
+        <a
           class="w-[299px] rounded-2xl bg-neutral-25 flex flex-col items-center py-10 px-0 gap-6 outline outline-1 outline-offset-[-1px] outline-primary-50 hover:outline-2 hover:outline-offset-[-2px]"
           href=""
-          ><img
+        >
+          <img
             class="w-16 relative h-16 overflow-hidden shrink-0"
             alt=""
             src="https://aframawandani.github.io/bonita-dev/assets/images/sleepingbag.svg"
@@ -379,10 +355,10 @@
         </a>
       </div>
     </div>
+
+    <!-- Section 3 -->
     <div class="bg-primary-25">
-      <div
-        class="relative mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 gap-8"
-      >
+      <div class="relative mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 gap-8">
         <div class="flex items-center gap-6 w-full">
           <h2 class="flex-1 typeface-heading-2">Produk Populer</h2>
         </div>
@@ -390,11 +366,9 @@
           class="[&:not(.slick-slider)]:overflow-hidden [&:not(.slick-slider)]:flex [&:not(.slick-slider)]:gap-6"
           id="popularProductSlider"
         >
-          <div
-            class="shrink-0 transition-transform duration-500 relative w-[304px]"
-          >
+          <div class="w-[304px]">
             <div class="flex flex-col shrink-0 w-[304px] pb-4 gap-2">
-              <a href="">
+              <a href="https://aframawandani.github.io/bonita-dev/product/test.html">
                 <img
                   class="w-[304px] relative rounded-2xl h-[210px] object-cover"
                   alt=""
@@ -406,11 +380,9 @@
               </h5>
             </div>
           </div>
-          <div
-            class="shrink-0 transition-transform duration-500 relative w-[304px]"
-          >
+          <div class="w-[304px]">
             <div class="flex flex-col shrink-0 w-[304px] pb-4 gap-2">
-              <a href="">
+              <a href="https://aframawandani.github.io/bonita-dev/product/test.html">
                 <img
                   class="w-[304px] relative rounded-2xl h-[210px] object-cover"
                   alt=""
@@ -422,11 +394,9 @@
               </h5>
             </div>
           </div>
-          <div
-            class="shrink-0 transition-transform duration-500 relative w-[304px]"
-          >
+          <div class="w-[304px]">
             <div class="flex flex-col shrink-0 w-[304px] pb-4 gap-2">
-              <a href="">
+              <a href="https://aframawandani.github.io/bonita-dev/product/test.html">
                 <img
                   class="w-[304px] relative rounded-2xl h-[210px] object-cover"
                   alt=""
@@ -438,11 +408,9 @@
               </h5>
             </div>
           </div>
-          <div
-            class="shrink-0 transition-transform duration-500 relative w-[304px]"
-          >
+          <div class="w-[304px]">
             <div class="flex flex-col shrink-0 w-[304px] pb-4 gap-2">
-              <a href="">
+              <a href="https://aframawandani.github.io/bonita-dev/product/test.html">
                 <img
                   class="w-[304px] relative rounded-2xl h-[210px] object-cover"
                   alt=""
@@ -454,11 +422,9 @@
               </h5>
             </div>
           </div>
-          <div
-            class="shrink-0 transition-transform duration-500 relative w-[304px]"
-          >
+          <div class="w-[304px]">
             <div class="flex flex-col shrink-0 w-[304px] pb-4 gap-2">
-              <a href="">
+              <a href="https://aframawandani.github.io/bonita-dev/product/test.html">
                 <img
                   class="w-[304px] relative rounded-2xl h-[210px] object-cover"
                   alt=""
@@ -470,11 +436,9 @@
               </h5>
             </div>
           </div>
-          <div
-            class="shrink-0 transition-transform duration-500 relative w-[304px]"
-          >
+          <div class="w-[304px]">
             <div class="flex flex-col shrink-0 w-[304px] pb-4 gap-2">
-              <a href="">
+              <a href="https://aframawandani.github.io/bonita-dev/product/test.html">
                 <img
                   class="w-[304px] relative rounded-2xl h-[210px] object-cover"
                   alt=""
@@ -489,6 +453,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Section 4 -->
     <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20">
       <div class="flex items-strect gap-12">
         <div class="hidden md:block">
@@ -561,6 +527,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Section 5 -->
     <div class="bg-primary-25">
       <div
         class="relative mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 gap-8"
@@ -639,13 +607,11 @@
         </div>
       </div>
     </div>
-    <div
-      class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 items-center gap-14"
-    >
+
+    <!-- Section 6 -->
+    <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 items-center gap-14">
       <h2 class="typeface-heading-2">Brand Kami</h2>
-      <div
-        class="flex items-center justify-center gap-x-[95px] gap-y-14 flex-wrap"
-      >
+      <div class="flex items-center justify-center gap-x-[95px] gap-y-14 flex-wrap">
         <a href="/bonita">
           <img src="https://aframawandani.github.io/bonita-dev/assets/images/bonita.png" />
         </a>
@@ -654,10 +620,10 @@
         </a>
       </div>
     </div>
+
+    <!-- Section 7 -->
     <div class="relative">
-      <div
-        class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 justify-center gap-5 h-full !py-8 min-h-[calc(100vw*613/1440)]"
-      >
+      <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 justify-center gap-5 h-full !py-8 min-h-[calc(100vw*613/1440)]">
         <div class="flex flex-col justify-center gap-8 basis-full">
           <div class="flex flex-col gap-[19px] w-[640px] max-w-full text-white">
             <h2 class="typeface-heading-2">
@@ -668,10 +634,9 @@
               pellentesque faucibus et arcu. Odio in dui semper habitant est
               magna ac mauris nisl.
             </h6>
-            <a class="flex items-center gap-4 text-5xl" href=""
-              ><img
+            <a class="flex items-center gap-4 text-5xl" href="">
+              <img
                 class="w-14 relative h-14 overflow-hidden shrink-0"
-                alt=""
                 src="https://aframawandani.github.io/bonita-dev/assets/images/solarplaycirclebold.svg"
               />
               <h5 class="typeface-heading-5 text-nowrap">Lihat sekarang</h5>
@@ -681,19 +646,17 @@
       </div>
       <img
         class="absolute z-[-1] top-0 left-0 w-full h-full object-cover"
-        alt=""
         src="https://aframawandani.github.io/bonita-dev/assets/images/Image.png"
       />
     </div>
-    <div
-      class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 items-center gap-14"
-    >
+
+    <!-- Section 8 -->
+    <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 items-center gap-14">
       <h2 class="typeface-heading-2">Blog &amp; berita terbaru</h2>
       <div class="flex flex-col lg:grid lg:grid-cols-2 gap-x-8 gap-y-16">
         <div class="flex flex-col gap-[19px]">
           <img
             class="rounded-2xl aspect-[624/330] object-cover"
-            alt=""
             src="https://aframawandani.github.io/bonita-dev/assets/images/blog-1.png"
           />
           <div class="flex flex-col items-start gap-6">
@@ -711,16 +674,11 @@
             <a
               class="w-full xs:w-auto rounded-2xl flex items-center justify-center py-4 px-12 text-base text-primary-300 border-[1px] border-solid border-primary-300"
               href=""
-              >Lihat Detail</a
-            >
+            >Lihat Detail</a>
           </div>
         </div>
-        <div
-          class="flex flex-col lg:grid lg:grid-cols-2 xl:flex xl:flex-col gap-x-8 gap-y-16 lg:gap-y-6"
-        >
-          <div
-            class="flex flex-col xs:flex-row lg:flex-col xl:flex-row gap-x-6 gap-y-[19px]"
-          >
+        <div class="flex flex-col lg:grid lg:grid-cols-2 xl:flex xl:flex-col gap-x-8 gap-y-16 lg:gap-y-6">
+          <div class="flex flex-col xs:flex-row lg:flex-col xl:flex-row gap-x-6 gap-y-[19px]">
             <img
               class="rounded-2xl w-full xs:w-[238px] lg:w-full xl:w-[238px] h-auto xs:h-[220px] lg:h-auto xl:h-[220px] aspect-[238/220] xs:aspect-auto lg:aspect-[238/220] object-cover"
               alt=""
@@ -740,16 +698,12 @@
               <a
                 class="w-full xs:w-auto rounded-2xl flex items-center justify-center py-4 px-12 text-base text-primary-300 border-[1px] border-solid border-primary-300"
                 href=""
-                >Lihat Detail</a
-              >
+              >Lihat Detail</a>
             </div>
           </div>
-          <div
-            class="flex flex-col xs:flex-row lg:flex-col xl:flex-row gap-x-6 gap-y-[19px]"
-          >
+          <div class="flex flex-col xs:flex-row lg:flex-col xl:flex-row gap-x-6 gap-y-[19px]">
             <img
               class="rounded-2xl w-[238px] lg:w-full xl:w-[238px] h-[220px] lg:h-auto xl:h-[220px] lg:aspect-[238/220] object-cover"
-              alt=""
               src="https://aframawandani.github.io/bonita-dev/assets/images/blog-3.png"
             />
             <div class="flex flex-col items-start gap-6">
@@ -766,13 +720,14 @@
               <a
                 class="w-full xs:w-auto rounded-2xl flex items-center justify-center py-4 px-12 text-base text-primary-300 border-[1px] border-solid border-primary-300"
                 href=""
-                >Lihat Detail</a
-              >
+              >Lihat Detail</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Footer -->
     <footer class="relative bg-neutral-100">
       <div
         class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 pt-12 pb-[21px]"
