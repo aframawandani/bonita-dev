@@ -8,10 +8,14 @@
 
     <meta name="description" content="No Description" />
 
+    <meta name="description" content="No Description" />
+
+    <link href="https://aframawandani.github.io/bonita-dev/assets/style.css" rel="stylesheet" />
+
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <link href="assets/style.css" rel="stylesheet" />
-
+    <script src="https://aframawandani.github.io/bonita-dev/assets/js/jquery-2.2.4.min.js"></script>
+    <script src="https://aframawandani.github.io/bonita-dev/assets/js/slick.min.js"></script>
+    
     <script>
       tailwind.config = {
         theme: {
@@ -58,81 +62,64 @@
         plugins: [],
       };
     </script>
+
   </head>
 
   <body class="text-neutral-800">
-    <nav
-      class="sticky z-[10000] top-0 h-[73px] border-b border-neutral-200 bg-white"
-    >
-      <div
-        class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 h-full !py-0"
-      >
+    <!-- Navbar -->
+    <nav class="sticky z-[10000] top-0 h-[73px] border-b border-neutral-200 bg-white">
+      <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 h-full !py-0">
         <div class="relative flex items-center gap-2 h-full">
           <button class="shrink-0 block lg:hidden p-2">
-            <img class="w-8 h-8" src="assets/images/menu.svg" alt="" /><img
-              class="w-8 h-8 hidden"
-              src="assets/images/x.svg"
-              alt=""
-            /></button
-          ><a class="shrink-0 mx-auto lg:mx-0" href="https://aframawandani.github.io/bonita-dev/"
-            ><img
+            <img class="w-8 h-8" src="https://aframawandani.github.io/bonita-dev/assets/images/menu.svg" />
+          </button>
+          <a class="shrink-0 mx-auto lg:mx-0" href="https://aframawandani.github.io/bonita-dev/">
+            <img
               class="w-[121px] h-10 object-cover"
-              src="assets/images/screenshot-20240402-at-1315-1@2x.png"
-              alt=""
-          /></a>
-          <div
-            class="hidden lg:block fixed lg:static top-[72px] left-0 right-0 mr-auto bg-white"
-          >
-            <ul
-              class="flex flex-col lg:flex-row items-stetch justify-start shrink-0 text-neutral-800"
-            >
+              src="https://aframawandani.github.io/bonita-dev/assets/images/screenshot-20240402-at-1315-1@2x.png"
+            />
+          </a>
+          <div class="hidden lg:block fixed lg:static top-[72px] left-0 right-0 mr-auto bg-white">
+            <ul class="flex flex-col lg:flex-row items-stetch justify-start shrink-0 text-neutral-800">
               <li>
                 <a
                   class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
                   href="https://aframawandani.github.io/bonita-dev/"
-                  >Beranda</a
-                >
+                >Beranda</a>
               </li>
               <li>
                 <a
                   class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
                   href="https://aframawandani.github.io/bonita-dev/about.html"
-                  >Tentang Kami</a
-                >
+                >Tentang Kami</a>
+              </li>
+              <li>
+                <a
+                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
+                  href="https://aframawandani.github.io/bonita-dev/bonita/sprei.html"
+                >Sprei</a>
+              </li>
+              <li>
+                <a
+                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
+                  href="https://aframawandani.github.io/bonita-dev/bonita/bedcover.html"
+                >Bed Cover</a>
               </li>
               <li>
                 <a
                   class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
                   href="https://aframawandani.github.io/bonita-dev/viona/"
-                  >Sprei</a
-                >
-              </li>
-              <li>
-                <a
-                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
-                  href="https://aframawandani.github.io/bonita-dev/viona/"
-                  >Bedcover</a
-                >
-              </li>
-              <li>
-                <a
-                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
-                  href="https://aframawandani.github.io/bonita-dev/viona/"
-                  >Viona</a
-                >
+                >Viona</a>
               </li>
               <li>
                 <a
                   class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
                   href="https://aframawandani.github.io/bonita-dev/partners.html"
-                  >Partner Kami</a
-                >
+                >Partner Kami</a>
               </li>
             </ul>
           </div>
-          <div
-            class="absolute xl:relative hidden xl:!block left-0 top-auto w-full xl:w-auto bg-white"
-          >
+          <div class="absolute xl:relative hidden xl:!block left-0 top-auto w-full xl:w-auto bg-white">
             <img
               alt=""
               loading="lazy"
@@ -142,24 +129,26 @@
               data-nimg="1"
               class="hidden xl:block absolute top-2 left-6 w-8 h-8"
               style="color: transparent"
-              src="assets/images/search.svg"
-            /><button class="block xl:hidden absolute top-2 left-6">
-              <img class="w-8 h-8" src="assets/images/arrow-left.svg" /></button
-            ><input
+              src="https://aframawandani.github.io/bonita-dev/assets/images/search.svg"
+            />
+            <button class="block xl:hidden absolute top-2 left-6">
+              <img class="w-8 h-8" src="https://aframawandani.github.io/bonita-dev/assets/images/arrow-left.svg" />
+            </button>
+            <input
               class="rounded-2xl bg-neutral-50 box-border w-full xl:w-[297px] h-12 flex flex-row items-center justify-start py-4 pl-16 pr-6 gap-[8px] border-[1px] border-solid border-neutral-200"
               placeholder="Search"
             />
           </div>
           <button class="ml-0 lg:ml-auto shrink-0 block xl:hidden p-2">
-            <img class="w-8 h-8" src="search.svg" alt="" />
+            <img class="w-8 h-8" src="https://aframawandani.github.io/bonita-dev/assets/images/search.svg" alt="" />
           </button>
         </div>
       </div>
     </nav>
+
+    <!-- Banner -->
     <div class="relative">
-      <div
-        class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 justify-center gap-5 aspect-[1440/388] w-full !py-8"
-      >
+      <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 justify-center gap-5 aspect-[1440/388] w-full !py-8">
         <div class="flex flex-col justify-center gap-8 basis-full">
           <div class="flex flex-col gap-4 w-[640px] max-w-full text-white">
             <h2 class="typeface-heading-3 md:typeface-heading-2">
@@ -174,50 +163,40 @@
       </div>
       <img
         class="absolute z-[-1] top-0 left-0 w-full h-full object-cover"
-        alt=""
-        src="assets/images/product-banner.png"
+        src="https://aframawandani.github.io/bonita-dev/assets/images/product-banner.png"
       />
     </div>
     <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 pt-14">
       <div class="flex flex-col lg:flex-row items-start gap-8">
-        <div
-          class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-col gap-8 w-full lg:w-auto min-w-[296px] border border-neutral-200 py-6 px-4"
-        >
+        <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-col gap-8 w-full lg:w-auto min-w-[296px] border border-neutral-200 py-6 px-4">
           <div class="xs:col-span-2 md:col-span-3 typeface-caption">
             Filters
           </div>
           <div class="flex flex-col gap-6">
-            <div
-              class="flex items-center gap-3 border-b border-neutral-200 pb-2 cursor-pointer"
-            >
+            <div class="flex items-center gap-3 border-b border-neutral-200 pb-2 cursor-pointer">
               <div class="flex-1 typeface-subtitle-1">Product Type</div>
               <img
                 class="w-5 h-5 transition-transform rotate-180"
-                alt=""
-                src="/fluentchevronup20filled1.svg"
+                src="https://aframawandani.github.io/bonita-dev/assets/fluentchevronup20filled1.svg"
               />
             </div>
             <div class="flex flex-col items-start gap-6">
               <label class="flex items-center gap-2 cursor-pointer">
-                <div
-                  class="relative w-4 shadow-[0px_1px_1px_rgba(0,_0,_0,_0.08)] h-4"
-                >
+                <input class="hidden" type="checkbox" value="sprei" />
+                <div class="relative w-4 shadow-[0px_1px_1px_rgba(0,_0,_0,_0.08)] h-4">
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
-                    alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">Sprei</div>
-                <input class="hidden" type="checkbox" value="sprei" /> </label
-              ><label class="flex items-center gap-2 cursor-pointer">
-                <div
-                  class="relative w-4 shadow-[0px_1px_1px_rgba(0,_0,_0,_0.08)] h-4"
-                >
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer">
+                <div class="relative w-4 shadow-[0px_1px_1px_rgba(0,_0,_0,_0.08)] h-4">
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
                     alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">Bedcover Only</div>
@@ -233,7 +212,7 @@
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
                     alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">Selimut</div>
@@ -245,7 +224,7 @@
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
                     alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">Other</div>
@@ -261,7 +240,7 @@
               <img
                 class="w-5 h-5 transition-transform rotate-180"
                 alt=""
-                src="/fluentchevronup20filled1.svg"
+                src="https://aframawandani.github.io/bonita-dev/assets/fluentchevronup20filled1.svg"
               />
             </div>
             <div class="flex flex-col items-start gap-6">
@@ -272,7 +251,7 @@
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
                     alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">100 x 200</div>
@@ -284,7 +263,7 @@
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
                     alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">120 x 200</div>
@@ -296,7 +275,7 @@
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
                     alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">160 x 200</div>
@@ -308,7 +287,7 @@
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
                     alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">180 x 200</div>
@@ -335,7 +314,7 @@
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
                     alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">20 cm</div>
@@ -347,7 +326,7 @@
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
                     alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">22 cm</div>
@@ -359,7 +338,7 @@
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
                     alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">25 cm</div>
@@ -386,7 +365,7 @@
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
                     alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">Bonita</div>
@@ -398,7 +377,7 @@
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
                     alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">Viona</div>
@@ -410,7 +389,7 @@
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
                     alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">Paulina</div>
@@ -879,7 +858,7 @@
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
                     alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">Aesthetic</div>
@@ -895,7 +874,7 @@
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
                     alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">Flower</div>
@@ -907,7 +886,7 @@
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
                     alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">Kids</div>
@@ -919,7 +898,7 @@
                   <img
                     class="absolute top-[0px] left-[0px] w-4 h-4"
                     alt=""
-                    src="/check.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/check.svg"
                   />
                 </div>
                 <div class="typeface-body">Emboss</div>
@@ -938,7 +917,7 @@
               ><img
                 class="w-full md:w-[248px] 1.5xl:w-[300px] h-auto md:h-[174px] 1.5xl:h-[210px] rounded-2xl object-cover"
                 alt=""
-                src="assets/images/rectangle-39906@2x.png"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/rectangle-39906@2x.png"
               />
               <h5
                 class="inline typeface-subtitle-1 1.5xl:typeface-heading-5 text-center font-semibold"
@@ -951,7 +930,7 @@
               ><img
                 class="w-full md:w-[248px] 1.5xl:w-[300px] h-auto md:h-[174px] 1.5xl:h-[210px] rounded-2xl object-cover"
                 alt=""
-                src="assets/images/rectangle-39906@2x.png"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/rectangle-39906@2x.png"
               />
               <h5
                 class="inline typeface-subtitle-1 1.5xl:typeface-heading-5 text-center font-semibold"
@@ -964,7 +943,7 @@
               ><img
                 class="w-full md:w-[248px] 1.5xl:w-[300px] h-auto md:h-[174px] 1.5xl:h-[210px] rounded-2xl object-cover"
                 alt=""
-                src="assets/images/rectangle-39906@2x.png"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/rectangle-39906@2x.png"
               />
               <h5
                 class="inline typeface-subtitle-1 1.5xl:typeface-heading-5 text-center font-semibold"
@@ -977,7 +956,7 @@
               ><img
                 class="w-full md:w-[248px] 1.5xl:w-[300px] h-auto md:h-[174px] 1.5xl:h-[210px] rounded-2xl object-cover"
                 alt=""
-                src="assets/images/rectangle-39906@2x.png"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/rectangle-39906@2x.png"
               />
               <h5
                 class="inline typeface-subtitle-1 1.5xl:typeface-heading-5 text-center font-semibold"
@@ -990,7 +969,7 @@
               ><img
                 class="w-full md:w-[248px] 1.5xl:w-[300px] h-auto md:h-[174px] 1.5xl:h-[210px] rounded-2xl object-cover"
                 alt=""
-                src="assets/images/rectangle-39906@2x.png"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/rectangle-39906@2x.png"
               />
               <h5
                 class="inline typeface-subtitle-1 1.5xl:typeface-heading-5 text-center font-semibold"
@@ -1003,7 +982,7 @@
               ><img
                 class="w-full md:w-[248px] 1.5xl:w-[300px] h-auto md:h-[174px] 1.5xl:h-[210px] rounded-2xl object-cover"
                 alt=""
-                src="assets/images/rectangle-39906@2x.png"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/rectangle-39906@2x.png"
               />
               <h5
                 class="inline typeface-subtitle-1 1.5xl:typeface-heading-5 text-center font-semibold"
@@ -1016,7 +995,7 @@
               ><img
                 class="w-full md:w-[248px] 1.5xl:w-[300px] h-auto md:h-[174px] 1.5xl:h-[210px] rounded-2xl object-cover"
                 alt=""
-                src="assets/images/rectangle-39906@2x.png"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/rectangle-39906@2x.png"
               />
               <h5
                 class="inline typeface-subtitle-1 1.5xl:typeface-heading-5 text-center font-semibold"
@@ -1029,7 +1008,7 @@
               ><img
                 class="w-full md:w-[248px] 1.5xl:w-[300px] h-auto md:h-[174px] 1.5xl:h-[210px] rounded-2xl object-cover"
                 alt=""
-                src="assets/images/rectangle-39906@2x.png"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/rectangle-39906@2x.png"
               />
               <h5
                 class="inline typeface-subtitle-1 1.5xl:typeface-heading-5 text-center font-semibold"
@@ -1042,7 +1021,7 @@
               ><img
                 class="w-full md:w-[248px] 1.5xl:w-[300px] h-auto md:h-[174px] 1.5xl:h-[210px] rounded-2xl object-cover"
                 alt=""
-                src="assets/images/rectangle-39906@2x.png"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/rectangle-39906@2x.png"
               />
               <h5
                 class="inline typeface-subtitle-1 1.5xl:typeface-heading-5 text-center font-semibold"
@@ -1055,7 +1034,7 @@
               ><img
                 class="w-full md:w-[248px] 1.5xl:w-[300px] h-auto md:h-[174px] 1.5xl:h-[210px] rounded-2xl object-cover"
                 alt=""
-                src="assets/images/rectangle-39906@2x.png"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/rectangle-39906@2x.png"
               />
               <h5
                 class="inline typeface-subtitle-1 1.5xl:typeface-heading-5 text-center font-semibold"
@@ -1068,7 +1047,7 @@
               ><img
                 class="w-full md:w-[248px] 1.5xl:w-[300px] h-auto md:h-[174px] 1.5xl:h-[210px] rounded-2xl object-cover"
                 alt=""
-                src="assets/images/rectangle-39906@2x.png"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/rectangle-39906@2x.png"
               />
               <h5
                 class="inline typeface-subtitle-1 1.5xl:typeface-heading-5 text-center font-semibold"
@@ -1081,7 +1060,7 @@
               ><img
                 class="w-full md:w-[248px] 1.5xl:w-[300px] h-auto md:h-[174px] 1.5xl:h-[210px] rounded-2xl object-cover"
                 alt=""
-                src="assets/images/rectangle-39906@2x.png"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/rectangle-39906@2x.png"
               />
               <h5
                 class="inline typeface-subtitle-1 1.5xl:typeface-heading-5 text-center font-semibold"
@@ -1095,7 +1074,7 @@
               ><img
                 class="object-contain"
                 alt=""
-                src="assets/images/expand-less.svg"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/expand-less.svg"
               />PREV</a
             >
             <div class="flex gap-4">
@@ -1111,7 +1090,7 @@
               >NEXT<img
                 class="object-contain"
                 alt=""
-                src="assets/images/expand-less1.svg"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/expand-less1.svg"
             /></a>
           </div>
         </div>
@@ -1127,7 +1106,7 @@
               <img
                 class="w-[169px] relative h-[62px] object-cover"
                 alt=""
-                src="assets/images/screenshot-20240402-at-1315-1@2x.png"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/screenshot-20240402-at-1315-1@2x.png"
               />
               <div class="self-stretch relative">
                 We ara a lorem ipsum dolor sit amet, consectetur adipiscing
@@ -1144,7 +1123,7 @@
                   <img
                     class="w-5 relative h-5"
                     alt=""
-                    src="assets/images/lighticon1.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/lighticon1.svg"
                   />
                 </div>
                 <div class="flex flex-col items-start justify-start gap-[2px]">
@@ -1163,7 +1142,7 @@
                   <img
                     class="w-5 relative h-5"
                     alt=""
-                    src="assets/images/lighticon2.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/lighticon2.svg"
                   />
                 </div>
                 <div class="flex flex-col items-start justify-start gap-[2px]">
@@ -1192,7 +1171,7 @@
               <img
                 class="absolute top-4 left-6 w-4 h-4"
                 alt=""
-                src="assets/images/lighticon.svg"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/lighticon.svg"
               /><input
                 class="w-full rounded-full bg-neutral-25 box-border h-12 shrink-0 flex pl-12 pr-[104px] border typeface-overline border-neutral-200 text-sm text-neutral-500"
                 placeholder="Enter your email"
@@ -1229,21 +1208,21 @@
               ><img
                 class="relative w-6 h-6"
                 alt=""
-                src="assets/images/basilinstagramsolid.svg" /></a
+                src="https://aframawandani.github.io/bonita-dev/assets/images/basilinstagramsolid.svg" /></a
             ><a
               class="shrink-0 flex items-center justify-center rounded-full bg-primary-50 p-3"
               href=""
               ><img
                 class="w-6 h-6"
                 alt=""
-                src="assets/images/fefacebook.svg" /></a
+                src="https://aframawandani.github.io/bonita-dev/assets/images/fefacebook.svg" /></a
             ><a
               class="shrink-0 flex items-center justify-center rounded-full bg-primary-50 p-3"
               href=""
               ><img
                 class="w-6 h-6"
                 alt=""
-                src="assets/images/tiktok-1.svg" /></a
+                src="https://aframawandani.github.io/bonita-dev/assets/images/tiktok-1.svg" /></a
             ><a
               class="shrink-0 flex items-center justify-center rounded-full bg-primary-50 p-3"
               href=""
@@ -1252,7 +1231,7 @@
                 <img
                   class="w-6 h-6"
                   alt=""
-                  src="assets/images/basilinstagramsolid1.svg"
+                  src="https://aframawandani.github.io/bonita-dev/assets/images/basilinstagramsolid1.svg"
                 />
               </div>
             </a>
