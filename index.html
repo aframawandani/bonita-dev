@@ -65,14 +65,12 @@
     <script>
       $(document).ready(() => {
         $("#bannerSlider").slick({
-          infinite: true,
           variableWidth: true,
           arrows: false,
           dots: true,
           dotsClass:
             "slick-dots absolute left-0 bottom-[16px] w-full flex justify-center gap-3",
-          gap: 0,
-          slickTrackClass: '!gap-0',
+          draggable: false,
         });
 
         $("#popularProductSlider").slick({
