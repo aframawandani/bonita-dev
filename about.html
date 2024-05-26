@@ -8,9 +8,11 @@
 
     <meta name="description" content="No Description" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://aframawandani.github.io/bonita-dev/assets/style.css" rel="stylesheet" />
 
-    <link href="assets/style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://aframawandani.github.io/bonita-dev/assets/js/jquery-2.2.4.min.js"></script>
+    <script src="https://aframawandani.github.io/bonita-dev/assets/js/slick.min.js"></script>
 
     <script>
       tailwind.config = {
@@ -61,78 +63,60 @@
   </head>
 
   <body class="text-neutral-800">
-    <nav
-      class="sticky z-[10000] top-0 h-[73px] border-b border-neutral-200 bg-white"
-    >
-      <div
-        class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 h-full !py-0"
-      >
+    <!-- Navbar -->
+    <nav class="sticky z-[10000] top-0 h-[73px] border-b border-neutral-200 bg-white">
+      <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 h-full !py-0">
         <div class="relative flex items-center gap-2 h-full">
           <button class="shrink-0 block lg:hidden p-2">
-            <img class="w-8 h-8" src="assets/images/menu.svg" alt="" /><img
-              class="w-8 h-8 hidden"
-              src="assets/images/x.svg"
-              alt=""
-            /></button
-          ><a class="shrink-0 mx-auto lg:mx-0" href="index.html"
-            ><img
+            <img class="w-8 h-8" src="https://aframawandani.github.io/bonita-dev/assets/images/menu.svg" />
+          </button>
+          <a class="shrink-0 mx-auto lg:mx-0" href="index.html">
+            <img
               class="w-[121px] h-10 object-cover"
-              src="assets/images/screenshot-20240402-at-1315-1@2x.png"
-              alt=""
-          /></a>
-          <div
-            class="hidden lg:block fixed lg:static top-[72px] left-0 right-0 mr-auto bg-white"
-          >
-            <ul
-              class="flex flex-col lg:flex-row items-stetch justify-start shrink-0 text-neutral-800"
-            >
+              src="https://aframawandani.github.io/bonita-dev/assets/images/screenshot-20240402-at-1315-1@2x.png"
+            />
+          </a>
+          <div class="hidden lg:block fixed lg:static top-[72px] left-0 right-0 mr-auto bg-white">
+            <ul class="flex flex-col lg:flex-row items-stetch justify-start shrink-0">
               <li>
                 <a
-                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
+                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap text-primary-300"
                   href="index.html"
-                  >Beranda</a
-                >
+                >Beranda</a>
               </li>
               <li>
                 <a
-                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
+                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap text-neutral-800"
                   href="about.html"
-                  >Tentang Kami</a
-                >
+                >Tentang Kami</a>
               </li>
               <li>
                 <a
                   class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
                   href="product.html"
-                  >Sprei</a
-                >
+                >Sprei</a>
               </li>
               <li>
                 <a
                   class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
                   href="product.html"
-                  >Bedcover</a
-                >
+                >Bedcover</a>
               </li>
               <li>
                 <a
                   class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
                   href="product.html"
-                  >Viona</a
-                >
+                >Viona</a>
               </li>
               <li>
                 <a
                   class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
                   href="partners.html"
-                  >Partner Kami</a
-                >
+                >Partner Kami</a>
               </li>
             </ul>
           </div>
-          <div
-            class="absolute xl:relative hidden xl:!block left-0 top-auto w-full xl:w-auto bg-white"
-          >
+          <div class="absolute xl:relative hidden xl:!block left-0 top-auto w-full xl:w-auto bg-white">
             <img
               alt=""
               loading="lazy"
@@ -142,10 +126,12 @@
               data-nimg="1"
               class="hidden xl:block absolute top-2 left-6 w-8 h-8"
               style="color: transparent"
-              src="assets/images/search.svg"
-            /><button class="block xl:hidden absolute top-2 left-6">
-              <img class="w-8 h-8" src="assets/images/arrow-left.svg" /></button
-            ><input
+              src="https://aframawandani.github.io/bonita-dev/assets/images/search.svg"
+            />
+            <button class="block xl:hidden absolute top-2 left-6">
+              <img class="w-8 h-8" src="https://aframawandani.github.io/bonita-dev/assets/images/arrow-left.svg" />
+            </button>
+            <input
               class="rounded-2xl bg-neutral-50 box-border w-full xl:w-[297px] h-12 flex flex-row items-center justify-start py-4 pl-16 pr-6 gap-[8px] border-[1px] border-solid border-neutral-200"
               placeholder="Search"
             />
@@ -156,10 +142,10 @@
         </div>
       </div>
     </nav>
+
+    <!-- Section 1 -->
     <div class="relative">
-      <div
-        class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 justify-center gap-5 h-full !py-8 min-h-[calc(100vw*394/1440)]"
-      >
+      <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 justify-center gap-5 h-full !py-8 min-h-[calc(100vw*394/1440)]">
         <div class="flex flex-col items-start gap-8 basis-full">
           <div class="flex flex-col gap-4 w-[640px] max-w-full text-white">
             <h2 class="typeface-heading-3 md:typeface-heading-2">
@@ -175,12 +161,12 @@
       <img
         class="absolute z-[-1] top-0 left-0 w-full h-full object-cover"
         alt=""
-        src="assets/images/about-banner.png"
+        src="https://aframawandani.github.io/bonita-dev/assets/images/about-banner.png"
       />
     </div>
-    <div
-      class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 gap-14"
-    >
+
+    <!-- Section 2 -->
+    <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 gap-14">
       <h2 class="typeface-heading-3 md:typeface-heading-2">
         Menghadirkan Sentuhan Kelembutan dan Kualitas Tidur yang Tak Tertandingi
       </h2>
@@ -189,12 +175,10 @@
           <img
             class="w-full lg:w-auto lg:h-[431px] rounded-2xl object-cover"
             alt=""
-            src="assets/images/about-1.png"
+            src="https://aframawandani.github.io/bonita-dev/assets/images/about-1.png"
           />
         </div>
-        <div
-          class="flex-1 flex flex-col items-start justify-start gap-[18px] min-w-[328px]"
-        >
+        <div class="flex-1 flex flex-col items-start justify-start gap-[18px] min-w-[328px]">
           <h3 class="typeface-heading-3">Tentang Bonita</h3>
           <p class="typeface-body text-neutral-500">
             Sprei Bonita adalah merek sprei yang dikenal karena kualitasnya yang
@@ -208,12 +192,10 @@
         </div>
       </div>
     </div>
-    <div
-      class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 !flex-row justify-center pt-0 gap-[73px] flex-wrap"
-    >
-      <div
-        class="shrink-0 flex flex-col items-center justify-start gap-[16px] w-[378px] rounded-xl border border-neutral-200 bg-neutral-25 p-12"
-      >
+
+    <!-- Section 3 -->
+    <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 !flex-row justify-center pt-0 gap-[73px] flex-wrap">
+      <div class="shrink-0 flex flex-col items-center justify-start gap-[16px] w-[378px] rounded-xl border border-neutral-200 bg-neutral-25 p-12">
         <div class="flex flex-col items-center justify-start gap-[8px]">
           <h5 class="typeface-heading-5">Penjualan</h5>
           <h3 class="text-[96px] font-extrabold text-primary-300">1830+</h3>
@@ -223,9 +205,7 @@
           lectus aliquet.
         </h6>
       </div>
-      <div
-        class="shrink-0 flex flex-col items-center justify-start gap-[16px] w-[378px] rounded-xl border border-neutral-200 bg-neutral-25 p-12"
-      >
+      <div class="shrink-0 flex flex-col items-center justify-start gap-[16px] w-[378px] rounded-xl border border-neutral-200 bg-neutral-25 p-12">
         <div class="flex flex-col items-center justify-start gap-[8px]">
           <h5 class="typeface-heading-5">Pelanggan Puas</h5>
           <h3 class="text-[96px] font-extrabold text-primary-300">94%</h3>
@@ -235,9 +215,7 @@
           et. Eget.
         </h6>
       </div>
-      <div
-        class="shrink-0 flex flex-col items-center justify-start gap-[16px] w-[378px] rounded-xl border border-neutral-200 bg-neutral-25 p-12"
-      >
+      <div class="shrink-0 flex flex-col items-center justify-start gap-[16px] w-[378px] rounded-xl border border-neutral-200 bg-neutral-25 p-12">
         <div class="flex flex-col items-center justify-start gap-[8px]">
           <h5 class="typeface-heading-5">Desain &amp; Inovasi</h5>
           <h3 class="text-[96px] font-extrabold text-primary-300">238</h3>
@@ -248,11 +226,11 @@
         </h6>
       </div>
     </div>
+
+    <!-- Section 4 -->
     <div class="bg-neutral-25">
       <div class="absolute bg-primary-25 w-full h-[593px]"></div>
-      <div
-        class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 relative z-10"
-      >
+      <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 relative z-10">
         <h2 class="typeface-heading-3 md:typeface-heading-2">
           Tidur yang nyaman adalah awal dari segala kebahagiaan. Dan sebuah
           sprei yang berkualitas adalah kunci untuk meraihnya
@@ -260,18 +238,15 @@
         <div class="ml-auto mt-14">
           <img
             class="rounded-2xl w-[990px] h-[552px] object-cover"
-            alt=""
-            src="assets/images/about-2.png"
+            src="https://aframawandani.github.io/bonita-dev/assets/images/about-2.png"
           />
         </div>
       </div>
     </div>
-    <div
-      class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 md:!flex-row items-center gap-[66px]"
-    >
-      <div
-        class="flex-[478] flex flex-col items-start justify-start gap-[22px]"
-      >
+
+    <!-- Section 5 -->
+    <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 md:!flex-row items-center gap-[66px]">
+      <div class="flex-[478] flex flex-col items-start justify-start gap-[22px]">
         <h2 class="typeface-heading-2">Visi Kami</h2>
         <p class="typeface-body text-neutral-500">
           Visi kami di Sprei Indah adalah untuk menjadi pemimpin dalam industri
@@ -286,43 +261,41 @@
       <div class="flex-col xs:flex-row flex-[763] flex gap-5 max-w-[736px]">
         <div class="flex flex-col gap-5">
           <div>
-            <img class="aspect-[434/393]" src="assets/images/visi-1.png" />
+            <img class="aspect-[434/393]" src="https://aframawandani.github.io/bonita-dev/assets/images/visi-1.png" />
           </div>
           <div class="aspect-[434/256]">
-            <img class="w-full" src="assets/images/visi-2.png" />
+            <img class="w-full" src="https://aframawandani.github.io/bonita-dev/assets/images/visi-2.png" />
           </div>
         </div>
         <div class="flex flex-col gap-5 xs:mt-[58px]">
           <div class="aspect-[282/412]">
-            <img class="w-full" src="assets/images/visi-3.png" />
+            <img class="w-full" src="https://aframawandani.github.io/bonita-dev/assets/images/visi-3.png" />
           </div>
           <div class="aspect-[282/234]">
-            <img class="w-full" src="assets/images/visi-4.png" />
+            <img class="w-full" src="https://aframawandani.github.io/bonita-dev/assets/images/visi-4.png" />
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Section 6 -->
     <div class="bg-primary-25">
       <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20">
         <div class="flex items-strect gap-12">
           <div class="flex-1 hidden md:block">
             <img
               class="rounded-2xl h-full object-cover"
-              alt=""
-              src="assets/images/misi-1.png"
+              src="https://aframawandani.github.io/bonita-dev/assets/images/misi-1.png"
             />
           </div>
           <div class="flex-1 flex flex-col gap-6">
             <h2 class="typeface-heading-2">Misi Kami</h2>
-            <div
-              class="flex flex-col py-3 px-0 border-b-[1px] border-solid border-neutral-200"
-            >
+            <div class="flex flex-col py-3 px-0 border-b-[1px] border-solid border-neutral-200">
               <div class="flex flex-col gap-4">
                 <div class="flex flex-col gap-3">
                   <img
                     class="w-12 relative h-12"
-                    alt=""
-                    src="assets/images/icon.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/icon.svg"
                   />
                   <h5 class="typeface-heading-5">Berkualitas tinggi</h5>
                 </div>
@@ -333,15 +306,12 @@
                 </h6>
               </div>
             </div>
-            <div
-              class="flex flex-col py-3 px-0 border-b-[1px] border-solid border-neutral-200"
-            >
+            <div class="flex flex-col py-3 px-0 border-b-[1px] border-solid border-neutral-200">
               <div class="flex flex-col gap-4">
                 <div class="flex flex-col gap-3">
                   <img
                     class="w-12 relative h-12 overflow-hidden shrink-0"
-                    alt=""
-                    src="assets/images/icon.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/icon.svg"
                   />
                   <h5 class="typeface-heading-5">Inovasi dalam desain</h5>
                 </div>
@@ -358,7 +328,7 @@
                   <img
                     class="w-[47px] relative h-[47px] overflow-hidden shrink-0"
                     alt=""
-                    src="assets/images/icon.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/icon.svg"
                   />
                   <h5 class="typeface-heading-5">
                     Pertumbuhan dan berkomitmen
@@ -375,29 +345,26 @@
         </div>
       </div>
     </div>
-    <div
-      class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 items-center gap-14"
-    >
+
+    <!-- Section 7 -->
+    <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 items-center gap-14">
       <h2 class="typeface-heading-2">Brand Kami</h2>
-      <div
-        class="flex items-center justify-center gap-x-[95px] gap-y-14 flex-wrap"
-      >
+      <div class="flex items-center justify-center gap-x-[95px] gap-y-14 flex-wrap">
         <img
           class="w-[264px] relative h-[47px] overflow-hidden shrink-0"
-          alt=""
-          src="assets/images/logo.svg"
+          src="https://aframawandani.github.io/bonita-dev/assets/images/logo.svg"
         />
-        <div
-          class="flex items-center justify-center w-[251px] relative rounded-lg bg-[#790F3E] h-28 overflow-hidden shrink-0"
-        >
+        <div class="flex items-center justify-center w-[251px] relative rounded-lg bg-[#790F3E] h-28 overflow-hidden shrink-0">
           <img
             class="w-[153px] h-[88px] object-cover"
             alt=""
-            src="assets/images/viona-by-bonita-1@2x.png"
+            src="https://aframawandani.github.io/bonita-dev/assets/images/viona-by-bonita-1@2x.png"
           />
         </div>
       </div>
     </div>
+
+    <!-- Footer -->
     <footer class="relative bg-neutral-100">
       <div
         class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 pt-12 pb-[21px]"
@@ -408,7 +375,7 @@
               <img
                 class="w-[169px] relative h-[62px] object-cover"
                 alt=""
-                src="assets/images/screenshot-20240402-at-1315-1@2x.png"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/screenshot-20240402-at-1315-1@2x.png"
               />
               <div class="self-stretch relative">
                 We ara a lorem ipsum dolor sit amet, consectetur adipiscing
@@ -425,7 +392,7 @@
                   <img
                     class="w-5 relative h-5"
                     alt=""
-                    src="assets/images/lighticon1.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/lighticon1.svg"
                   />
                 </div>
                 <div class="flex flex-col items-start justify-start gap-[2px]">
@@ -444,7 +411,7 @@
                   <img
                     class="w-5 relative h-5"
                     alt=""
-                    src="assets/images/lighticon2.svg"
+                    src="https://aframawandani.github.io/bonita-dev/assets/images/lighticon2.svg"
                   />
                 </div>
                 <div class="flex flex-col items-start justify-start gap-[2px]">
@@ -473,7 +440,7 @@
               <img
                 class="absolute top-4 left-6 w-4 h-4"
                 alt=""
-                src="assets/images/lighticon.svg"
+                src="https://aframawandani.github.io/bonita-dev/assets/images/lighticon.svg"
               /><input
                 class="w-full rounded-full bg-neutral-25 box-border h-12 shrink-0 flex pl-12 pr-[104px] border typeface-overline border-neutral-200 text-sm text-neutral-500"
                 placeholder="Enter your email"
@@ -510,21 +477,21 @@
               ><img
                 class="relative w-6 h-6"
                 alt=""
-                src="assets/images/basilinstagramsolid.svg" /></a
+                src="https://aframawandani.github.io/bonita-dev/assets/images/basilinstagramsolid.svg" /></a
             ><a
               class="shrink-0 flex items-center justify-center rounded-full bg-primary-50 p-3"
               href=""
               ><img
                 class="w-6 h-6"
                 alt=""
-                src="assets/images/fefacebook.svg" /></a
+                src="https://aframawandani.github.io/bonita-dev/assets/images/fefacebook.svg" /></a
             ><a
               class="shrink-0 flex items-center justify-center rounded-full bg-primary-50 p-3"
               href=""
               ><img
                 class="w-6 h-6"
                 alt=""
-                src="assets/images/tiktok-1.svg" /></a
+                src="https://aframawandani.github.io/bonita-dev/assets/images/tiktok-1.svg" /></a
             ><a
               class="shrink-0 flex items-center justify-center rounded-full bg-primary-50 p-3"
               href=""
@@ -533,7 +500,7 @@
                 <img
                   class="w-6 h-6"
                   alt=""
-                  src="assets/images/basilinstagramsolid1.svg"
+                  src="https://aframawandani.github.io/bonita-dev/assets/images/basilinstagramsolid1.svg"
                 />
               </div>
             </a>
