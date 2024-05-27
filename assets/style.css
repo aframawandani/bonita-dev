@@ -150,3 +150,7 @@ body {
 .checkbox input:checked + div {
   background-color: #1d2939;
 }
+
+.color-radio input:checked + div {
+  outline: #1d2939 solid 3px;
+}
