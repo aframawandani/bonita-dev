@@ -153,4 +153,5 @@ body {
 
 .color-radio input:checked + div {
   outline: #1d2939 solid 3px;
+  outline-offset: 3px;
 }
