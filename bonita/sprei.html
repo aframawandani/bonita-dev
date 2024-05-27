@@ -85,85 +85,20 @@
   </head>
 
   <body class="text-neutral-800">
-    <!-- Navbar -->
-    <nav class="sticky z-[10000] top-0 h-[73px] border-b border-neutral-200 bg-white">
-      <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 h-full !py-0">
-        <div class="relative flex items-center gap-2 h-full">
-          <button class="shrink-0 block lg:hidden p-2">
-            <img class="w-8 h-8" src="https://aframawandani.github.io/bonita-dev/assets/images/menu.svg" />
-          </button>
-          <a class="shrink-0 mx-auto lg:mx-0" href="https://aframawandani.github.io/bonita-dev/">
-            <img
-              class="w-[121px] h-10 object-cover"
-              src="https://aframawandani.github.io/bonita-dev/assets/images/screenshot-20240402-at-1315-1@2x.png"
-            />
-          </a>
-          <div class="hidden lg:block fixed lg:static top-[72px] left-0 right-0 mr-auto bg-white">
-            <ul class="flex flex-col lg:flex-row items-stetch justify-start shrink-0 text-neutral-800">
-              <li>
-                <a
-                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
-                  href="https://aframawandani.github.io/bonita-dev/"
-                >Beranda</a>
-              </li>
-              <li>
-                <a
-                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
-                  href="https://aframawandani.github.io/bonita-dev/about.html"
-                >Tentang Kami</a>
-              </li>
-              <li>
-                <a
-                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap text-primary-300"
-                  href="https://aframawandani.github.io/bonita-dev/bonita/sprei.html"
-                >Sprei</a>
-              </li>
-              <li>
-                <a
-                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
-                  href="https://aframawandani.github.io/bonita-dev/bonita/bedcover.html"
-                >Bed Cover</a>
-              </li>
-              <li>
-                <a
-                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
-                  href="https://aframawandani.github.io/bonita-dev/viona/"
-                >Viona</a>
-              </li>
-              <li>
-                <a
-                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
-                  href="https://aframawandani.github.io/bonita-dev/partners.html"
-                >Partner Kami</a>
-              </li>
-            </ul>
-          </div>
-          <div class="absolute xl:relative hidden xl:!block left-0 top-auto w-full xl:w-auto bg-white">
-            <img
-              alt=""
-              loading="lazy"
-              width="32"
-              height="32"
-              decoding="async"
-              data-nimg="1"
-              class="hidden xl:block absolute top-2 left-6 w-8 h-8"
-              style="color: transparent"
-              src="https://aframawandani.github.io/bonita-dev/assets/images/search.svg"
-            />
-            <button class="block xl:hidden absolute top-2 left-6">
-              <img class="w-8 h-8" src="https://aframawandani.github.io/bonita-dev/assets/images/arrow-left.svg" />
-            </button>
-            <input
-              class="rounded-2xl bg-neutral-50 box-border w-full xl:w-[297px] h-12 flex flex-row items-center justify-start py-4 pl-16 pr-6 gap-[8px] border-[1px] border-solid border-neutral-200"
-              placeholder="Search"
-            />
-          </div>
-          <button class="ml-0 lg:ml-auto shrink-0 block xl:hidden p-2">
-            <img class="w-8 h-8" src="https://aframawandani.github.io/bonita-dev/assets/images/search.svg" alt="" />
-          </button>
-        </div>
+    <!-- Header -->
+    <header class="py-3 bg-[#FCFCFD] border border-b">
+      <div class="mx-auto flex max-w-[1440px] flex justify-between items-center px-5 lg:px-20">
+        <a href="https://aframawandani.github.io/bonita-dev/"><img src="https://aframawandani.github.io/bonita-dev/assets/images/logo.png" alt="Logo" class="h-[50px]" /></a>
+        <ul class="flex gap-10 text-[#E93323] font-semibold">
+          <li>
+            <a href="#brand">Brand</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://wa.me/6281388220900">Kontak Kami</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </header>
 
     <div class="relative mx-auto flex flex-col max-w-[1440px] px-5 pt-24 pb-14 lg:px-20 gap-8">
       <div class="flex flex-col items-center justify-center gap-12">
@@ -356,131 +291,139 @@
     <!-- Footer -->
     <footer class="relative bg-neutral-100">
       <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 pt-12 pb-[21px]">
-        <div class="flex flex-col lg:flex-row items-strect gap-x-16 gap-y-12">
-          <div class="basis-3/8 flex flex-col gap-6 text-neutral-500">
-            <div class="flex flex-col items-start justify-center gap-3">
-              <img
-                class="w-[169px] relative h-[62px] object-cover"
-                src="https://aframawandani.github.io/bonita-dev/assets/images/screenshot-20240402-at-1315-1@2x.png"
-              />
-              <div class="self-stretch relative">
-                We ara a lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididun.
-              </div>
-            </div>
-            <div class="flex items-start justify-start gap-x-14 gap-y-6 flex-wrap">
-              <div class="shrink-0 flex items-center justify-center gap-3">
-                <div class="w-12 rounded-full bg-primary-50 h-12 overflow-hidden shrink-0 flex flex-col items-center justify-center">
-                  <img
-                    class="w-5 relative h-5"
-                    src="https://aframawandani.github.io/bonita-dev/assets/images/lighticon1.svg"
-                  />
-                </div>
-                <div class="flex flex-col items-start justify-start gap-[2px]">
-                  <div class="relative">Have a question?</div>
-                  <div class="relative text-base font-semibold text-primary-300">
-                    310-437-2766
-                  </div>
-                </div>
-              </div>
-              <div class="shrink-0 flex items-center justify-center gap-3">
-                <div class="w-12 rounded-full bg-primary-50 h-12 overflow-hidden shrink-0 flex flex-col items-center justify-center">
-                  <img
-                    class="w-5 relative h-5"
-                    alt=""
-                    src="https://aframawandani.github.io/bonita-dev/assets/images/lighticon2.svg"
-                  />
-                </div>
-                <div class="flex flex-col items-start justify-start gap-[2px]">
-                  <div class="relative">Contact us at</div>
-                  <div class="relative text-base font-semibold text-primary-300">
-                    Bonita@site.com
-                  </div>
-                </div>
-              </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div>
+            <div class="flex flex-col sm:flex-row gap-5 items-center">
+              <a href="https://aframawandani.github.io/bonita-dev/"><img src="https://aframawandani.github.io/bonita-dev/assets/images/logo.png" alt="Logo" class="w-[150px]" /></a>
+              <p class="text-center sm:text-start">
+                Sprei Pilihan Keluarga Indonesia
+              </p>
             </div>
           </div>
-          <div class="basis-5/8 flex flex-col gap-8 text-lg">
-            <div class="flex flex-col items-start justify-center gap-[12px]">
-              <div class="relative font-semibold">Newsletter</div>
-              <div class="self-stretch relative text-sm leading-[150%] text-neutral-500 whitespace-wrap">
-                Be the first one to know about discounts, offers and events
-                weekly in your mailbox. Unsubscribe whenever you like with one
-                click.
+          <div class="flex justify-center sm:justify-start lg:justify-end items-start">
+            <div class="flex flex-col sm:flex-row gap-10">
+              <div class="flex items-center gap-3">
+                <div class="bg-[#FFC3BD] w-[45px] h-[45px] rounded-full flex justify-center items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    class="text-[#E93323] text-2xl iconify iconify--humbleicons"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12.636 4A7.364 7.364 0 0 1 20 11.364M13 8a3 3 0 0 1 3 3M7 6l-2.485.621c-.89.223-1.534 1.029-1.352 1.928c1.06 5.213 7.075 11.228 12.288 12.287c.9.183 1.705-.46 1.928-1.35l.62-2.486l-3.5-2l-1.5 1.5c-2-1-4.5-3.5-5.5-5.5L9 9.5z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm">Have a question?</p>
+                  <a
+                    href="https://wa.me/6281388220900"
+                    target="_blank"
+                    class="text-[#E93323] font-medium"
+                  >081388220900</a
+                  >
+                </div>
               </div>
-            </div>
-            <div class="relative">
-              <img
-                class="absolute top-4 left-6 w-4 h-4"
-                alt=""
-                src="https://aframawandani.github.io/bonita-dev/assets/images/lighticon.svg"
-              />
-              <input
-                class="w-full rounded-full bg-neutral-25 box-border h-12 shrink-0 flex pl-12 pr-[104px] border typeface-overline border-neutral-200 text-sm text-neutral-500"
-                placeholder="Enter your email"
-              />
-              <button class="absolute top-1.5 right-1.5 w-[94px] rounded-2xl bg-primary-300 h-9 py-0 typeface-caption text-white">
-                Submit
-              </button>
+              <div class="flex items-center gap-3">
+                <div class="bg-[#FFC3BD] w-[45px] h-[45px] rounded-full flex justify-center items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    class="text-[#E93323] text-2xl iconify iconify--material-symbols"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm">Contact us at</p>
+                  <a href="#" class="text-[#E93323] font-medium">Bonita@site.com</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="w-full h-[1px] bg-neutral-200"></div>
-      <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 gap-12 pt-[21px] pb-12">
-        <div class="flex items-start justify-between gap-8 flex-wrap">
-          <a class="shrink-0 typeface-subtitle-2" href="https://aframawandani.github.io/bonita-dev/product.html">Sprei</a>
-          <a class="shrink-0 typeface-subtitle-2" href="https://aframawandani.github.io/bonita-dev/product.html">Bedcover</a>
-          <a class="shrink-0 typeface-subtitle-2" href="https://aframawandani.github.io/bonita-dev/product.html">Viona</a>
-          <a class="shrink-0 typeface-subtitle-2" href="https://aframawandani.github.io/bonita-dev/partners.html">Partner Kami</a>
-          <a class="shrink-0 typeface-subtitle-2" href="https://aframawandani.github.io/bonita-dev/about.html">Tentang Kami</a>
-          <a class="shrink-0 typeface-subtitle-2" href="https://aframawandani.github.io/bonita-dev/product/test.html">Blog</a>
-          <a class="shrink-0 typeface-subtitle-2" href="https://aframawandani.github.io/bonita-dev/product/test.html">Kontak Kami</a>
-        </div>
-        <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-          <div class="flex items-center justify-start gap-2">
+        <div class="flex flex-col sm:flex-row gap-5 justify-between items-center border-t mt-10 pt-5">
+          <div class="flex gap-2">
             <a
-              class="shrink-0 flex items-center justify-center rounded-full bg-primary-50 p-3"
-              href="https://aframawandani.github.io/bonita-dev/product/test.html"
+              class="bg-[#FFC3BD] w-[35px] h-[35px] rounded-full flex justify-center items-center"
+              href="https://www.instagram.com/bonitasprei_official/"
             >
-              <img
-                class="relative w-6 h-6"
-                src="https://aframawandani.github.io/bonita-dev/assets/images/basilinstagramsolid.svg"
-              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="text-[#E93323] iconify iconify--brandico"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1000 1000"
+              >
+                <path
+                  fill="currentColor"
+                  d="M603.575 510.854c0-54.044-44.172-98.02-98.463-98.02c-54.285 0-98.455 43.977-98.455 98.02c0 54.058 44.17 98.026 98.455 98.026c54.291 0 98.463-43.968 98.463-98.026M749.855.602H250.142C112.465.602.456 112.124.456 249.199v69.266h367.413c38.769-27.496 86.118-43.739 137.243-43.739c51.124 0 98.48 16.243 137.251 43.739H999.54v-69.266C999.54 112.123 887.531.602 749.855.602m101.12 236.435c0 15.191-12.48 27.622-27.743 27.622h-85.72c-15.261 0-27.743-12.431-27.743-27.622v-85.352c0-15.19 12.481-27.622 27.743-27.622h85.72c15.262 0 27.743 12.43 27.743 27.622zM742.287 510.854c0 130.215-106.402 236.133-237.176 236.133c-130.778 0-237.17-105.918-237.17-236.133c0-35.848 8.11-69.845 22.532-100.318H.456v340.263c0 137.085 112.009 248.597 249.686 248.597h499.714c137.676 0 249.685-111.513 249.685-248.597V410.536H719.755c14.422 30.473 22.532 64.47 22.532 100.318"
+                ></path>\
+              </svg>
             </a>
             <a
-              class="shrink-0 flex items-center justify-center rounded-full bg-primary-50 p-3"
-              href="https://aframawandani.github.io/bonita-dev/product/test.html"
+              class="bg-[#FFC3BD] w-[35px] h-[35px] rounded-full flex justify-center items-center"
+              href="https://www.instagram.com/vionaspreiofficial/"
             >
-              <img
-                class="w-6 h-6"
-                src="https://aframawandani.github.io/bonita-dev/assets/images/fefacebook.svg"
-              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="text-[#E93323] iconify iconify--brandico"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1000 1000"
+              >
+                <path
+                  fill="currentColor"
+                  d="M603.575 510.854c0-54.044-44.172-98.02-98.463-98.02c-54.285 0-98.455 43.977-98.455 98.02c0 54.058 44.17 98.026 98.455 98.026c54.291 0 98.463-43.968 98.463-98.026M749.855.602H250.142C112.465.602.456 112.124.456 249.199v69.266h367.413c38.769-27.496 86.118-43.739 137.243-43.739c51.124 0 98.48 16.243 137.251 43.739H999.54v-69.266C999.54 112.123 887.531.602 749.855.602m101.12 236.435c0 15.191-12.48 27.622-27.743 27.622h-85.72c-15.261 0-27.743-12.431-27.743-27.622v-85.352c0-15.19 12.481-27.622 27.743-27.622h85.72c15.262 0 27.743 12.43 27.743 27.622zM742.287 510.854c0 130.215-106.402 236.133-237.176 236.133c-130.778 0-237.17-105.918-237.17-236.133c0-35.848 8.11-69.845 22.532-100.318H.456v340.263c0 137.085 112.009 248.597 249.686 248.597h499.714c137.676 0 249.685-111.513 249.685-248.597V410.536H719.755c14.422 30.473 22.532 64.47 22.532 100.318"
+                ></path>
+              </svg>
             </a>
             <a
-              class="shrink-0 flex items-center justify-center rounded-full bg-primary-50 p-3"
-              href="https://aframawandani.github.io/bonita-dev/product/test.html"
+              class="bg-[#FFC3BD] w-[35px] h-[35px] rounded-full flex justify-center items-center"
+              href="https://www.tiktok.com/@bonitasprei_official"
             >
-              <img
-                class="w-6 h-6"
-                src="https://aframawandani.github.io/bonita-dev/assets/images/tiktok-1.svg"
-              />
-            </a>
-            <a
-              class="shrink-0 flex items-center justify-center rounded-full bg-primary-50 p-3"
-              href="https://aframawandani.github.io/bonita-dev/product/test.html"
-            >
-              <div class="flex items-center justify-center">
-                <img
-                  class="w-6 h-6"
-                  src="https://aframawandani.github.io/bonita-dev/assets/images/basilinstagramsolid1.svg"
-                />
-              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="text-[#E93323] iconify iconify--ic"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48"
+                ></path>
+              </svg>
             </a>
           </div>
-          <div class="typeface-caption opacity-[0.5] mix-blend-normal">
-            Copyright © 2024.bonita. All rights reserved.
-          </div>
+          <p class="text-sm">Copyright © 2024.bonita. All rights reserved.</p>
         </div>
       </div>
     </footer>
