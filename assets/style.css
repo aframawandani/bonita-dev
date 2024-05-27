@@ -144,9 +144,9 @@ body {
 }
 
 .variant input:checked + div {
-  border-color: #000000;
+  border-color: #1d2939;
 }
 
 .checkbox input:checked + div {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: #1d2939;
 }
