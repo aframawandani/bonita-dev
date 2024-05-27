@@ -151,6 +151,6 @@ body {
   background-color: #1d2939;
 }
 
-.color-radio input:checked + div {
+.color-radio input:checked + button {
   outline: #1d2939 solid 3px;
 }
