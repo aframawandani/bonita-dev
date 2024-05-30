@@ -95,20 +95,82 @@
 
   <body class="text-neutral-800">
     <!-- Header -->
-    <header class="py-3 bg-[#FCFCFD] border border-b">
-      <div class="mx-auto flex max-w-[1440px] flex justify-between items-center px-5 lg:px-20">
-        <a href="https://aframawandani.github.io/bonita-dev/"><img src="https://aframawandani.github.io/bonita-dev/assets/images/logo.png" alt="Logo" class="h-[50px]" /></a>
-        <ul class="flex gap-10 text-[#E93323] font-semibold">
-          <li>
-            <a href="#brand">Brand</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://wa.me/6281388220900">Kontak Kami</a>
-          </li>
-        </ul>
+    <header class="sticky z-50 top-0 h-[73px] border-b border-neutral-200 bg-white">
+      <div class="mx-auto flex flex-col max-w-[1440px] py-24 px-5 lg:px-20 h-full !py-0">
+        <div class="relative flex items-center gap-2 h-full">
+          <button class="shrink-0 block lg:hidden p-2">
+            <img class="w-8 h-8" src="/assets/images/menu.svg" alt="" />
+            <img
+              class="w-8 h-8 hidden"
+              src="/assets/images/x.svg"
+            />
+          </button>
+          <a class="shrink-0 mx-auto lg:mx-0" href="/">
+            <img
+              class="w-[121px] h-10 object-cover"
+              src="/assets/images/screenshot-20240402-at-1315-1@2x.png"
+            />
+          </a>
+          <nav class="hidden lg:block fixed lg:static top-[72px] left-0 right-0 mr-auto bg-white">
+            <ul class="flex flex-col lg:flex-row items-stetch justify-start shrink-0 text-neutral-800">
+              <li>
+                <a
+                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap text-primary-300"
+                  href="/"
+                >Beranda</a>
+              </li>
+              <li>
+                <a
+                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
+                  href="/about"
+                >Tentang Kami</a>
+              </li>
+              <li>
+                <a
+                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
+                  href="/product"
+                >Sprei</a>
+              </li>
+              <li>
+                <a
+                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
+                  href="/product"
+                >Bedcover</a>
+              </li>
+              <li>
+                <a
+                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
+                  href="/product"
+                >Viona</a>
+              </li>
+              <li>
+                <a
+                  class="block px-10 lg:px-5 py-6 font-semibold text-nowrap"
+                  href="/partners"
+                >Partner Kami</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="absolute xl:relative hidden xl:!block left-0 top-auto w-full xl:w-auto bg-white">
+            <img
+              class="hidden xl:block absolute top-2 left-6 w-8 h-8"
+              src="/assets/images/search.svg"
+            />
+            <button class="block xl:hidden absolute top-2 left-6">
+              <img class="w-8 h-8" src="/assets/images/arrow-left.svg" />
+            </button>
+            <input
+              class="rounded-2xl bg-neutral-50 box-border w-full xl:w-[297px] h-12 flex flex-row items-center justify-start py-4 pl-16 pr-6 gap-[8px] border-[1px] border-solid border-neutral-200"
+              placeholder="Search"
+            />
+          </div>
+          <button class="ml-0 lg:ml-auto shrink-0 block xl:hidden p-2">
+            <img class="w-8 h-8" src="search.svg" alt="" />
+          </button>
+        </div>
       </div>
     </header>
-
+    
     <!-- Banner -->
     <div class="flex flex-col">
       <div class="slick-single [&:not(.slick-slider)]:overflow-hidden [&:not(.slick-slider)]:flex" id="bannerSlider">
